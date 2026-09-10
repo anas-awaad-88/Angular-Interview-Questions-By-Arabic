@@ -195,8 +195,8 @@ This Repo is inspired by the following sources:
 
 [⬆️ Back to Top](#top)
 
-<div dir="auto" align="right"> 
-Angular‏ هو Framework‏ معمول بـ TypeScript‏ ومن تطوير Google‏، بنستخدمه عشان نبني بيه Web‏ Applications‏، خصوصًا التطبيقات الكبيرة والـ SPA.‏ بيوفرلنا حاجات كتير جاهزة زي الـ Components‏ والـ Routing‏ والـ Forms‏ والـ HTTP‏ Client‏ والـ Dependency‏ Injection‏، فبدل ما أبدأ كل حاجة من الصفر، Angular‏ بيديني Structure‏ وأدوات تساعدني أبني التطبيق بشكل منظم وسهل يتطور ويتصان.‏
+<div dir="rtl" align="right">
+Angular هو Framework معمول بـ TypeScript ومن تطوير Google، بنستخدمه عشان نبني بيه Web Applications، خصوصًا التطبيقات الكبيرة والـ SPA. بيوفرلنا حاجات كتير جاهزة زي الـ Components والـ Routing والـ Forms والـ HTTP Client والـ Dependency Injection، فبدل ما أبدأ كل حاجة من الصفر، Angular بيديني Structure وأدوات تساعدني أبني التطبيق بشكل منظم وسهل يتطور ويتصان.
 </div>
 <hr/>
 
@@ -205,7 +205,7 @@ Angular‏ هو Framework‏ معمول بـ TypeScript‏ ومن تطوير Goo
 [⬆️ Back to Top](#top)
 
 <div dir="auto" align="right"> 
-ال TypeScript هو نسخة محسنة من JavaScript عملتها مايكروسوفت، والمميز فيه إنه بيضيف أنواع متغيرة (types) إلزامية زي الـ string و number، وكمان بيدعم حاجات زي الـ classes، والـ async/await، وميزات تانية كتير. وبعدين بيتحول الكود المكتوب بـ TypeScript إلى كود عادي مكتوب بـ JavaScript اللي كل المتصفحات بتفهمه.
+ال TypeScript هو نسخة محسنة من JavaScript عملتها مايكروسوفت، والمميز فيه إنه بيضيف أنواع متغيرة (types) إلزامية زي الـ string و number، وكمان بيدعم حاجات زي الـ classes، وميزات تانية كتير. وبعدين بيتحول الكود المكتوب بـ TypeScript إلى كود عادي مكتوب بـ JavaScript اللي كل المتصفحات بتفهمه.
 الـ Angular كله متبني الـ TypeScript كلغة رئيسية.
 
 ### مثال بسيط لاستخدام TypeScript
@@ -239,70 +239,199 @@ The main building blocks of an Angular application are shown in the diagram belo
 
 <hr/>
 
+<a name="what-are-the-key-components-of-angular"></a>
+
 ## What are the key components of Angular?
+
+(إيه أهم المكونات الأساسية في Angular) (إيه المفاهيم الأساسية في Angular؟)
 
 [⬆️ Back to Top](#top)
 
-<div dir="auto" align="right">
+<div dir="rtl" align="right">
 
-### المكونات الأساسية في Angular بتشمل الحاجات دي:
+أهم الأجزاء الأساسية في Angular هي الـ **Components والـ Templates والـ Services والـ Dependency Injection والـ Directives والـ Pipes والـ Routing**.
 
-#### Component
+كل جزء ليه دور معين في بناء وتنظيم التطبيق:
 
-ال(Components) في Angular زي الطوب اللي بتبني بيه التطبيق بتاعك، كل Component مسؤول عن جزء معين من الصفحة اللي بتظهر للمستخدم. يعني هو اللي بيقول الـ HTML يتعرض إزاي ويشتغل إزاي. زي مثلاً لو عندك صفحة تسجيل دخول، الComponent هو اللي هيتحكم في الشكل والأزرار وكل حاجة بتظهر في الجزء ده.
-
-#### Modules
-
-في Angular هي عبارة عن مجموعة من Components Angular الأساسية زي الـ Components، والـ Directives، والـ Services وغيرها. التطبيق بيتقسم لقطع منطقية، وكل قطعة بتتسمى "Module" وبتقوم بمهمة واحدة محددة.
-
-#### Templates
-
-ال(Templates) في Angular زي الرسمة اللي بتقول Component يعرض إيه بالظبط. يعني هي اللي بتحدد الشكل اللي المستخدم هيشوفه، زي الأزرار، النصوص، والصور. Template ده بيبقى مليان كود HTML، بس ممكن كمان يكون فيه حاجات ديناميكية بتتغير حسب اللي بيحصل في التطبيق. يعني باختصار، Template هو اللي بيرسم شكل الواجهة اللي هتشوفها قدامك.
-
-#### Services
-
-دي زي حاجات بتعملها مرة واحدة وتقدر تستخدمها في أي حتة في التطبيق بتاعك. يعني لو عندك شغلانة معينة وعايز تعملها في كذا مكان، مش هتعيد الكود كل مرة، بتعملها كـ "Service" وتستخدمها في أي حتة.
-
-#### Metadata
-
-دي زي شوية معلومات إضافية بتضيفها على الكلاس عشان تخليه يشتغل بشكل معين في Angular. يعني زي ما تكون بتدي توجيهات زيادة للكلاس ده، عشان Angular يفهمه بطريقة أحسن.
+<div><b>الـ Components:</b> مسؤولة عن بناء واجهة المستخدم وتقسيم التطبيق لأجزاء صغيرة.</div>
+<div><b>الـ Templates:</b> مسؤولة عن شكل الـ UI والـ HTML الخاص بالـ Component.</div>
+<div><b>الـ Services:</b> بنستخدمها للـ Business Logic والتعامل مع الـ APIs ومشاركة البيانات.</div>
+<div><b>الـ Dependency Injection:</b> بتساعدنا نوفر الـ Dependencies زي الـ Services للـ Components بشكل منظم.</div>
+<div><b>الـ Directives:</b> بتستخدم لتغيير سلوك أو شكل عناصر الـ HTML زي *ngIf و*ngFor.</div>
+<div><b>الـ Pipes:</b> بنستخدمها لتغيير طريقة عرض البيانات، زي تحويل التاريخ أو تنسيق الأرقام.</div>
+<div><b>الـ Routing:</b> مسؤول عن التنقل بين الصفحات والمكونات داخل التطبيق.</div>
 
 </div>
 
 <hr/>
+
+<a name="what-are-directives"></a>
 
 ## What are directives?
 
 [⬆️ Back to Top](#top)
 
-<div dir="auto" align="right">
-الDirectives في Angular هي زي تعليمات بتضيف تصرفات أو سلوكيات جديدة لعناصر الـ DOM اللي موجودة في الصفحة، أو حتى لComponent موجود بالفعل.
-<div dir="auto" align="left">
+<div dir="rtl" align="right">
+
+الـ **Directives** في Angular هي تعليمات أو أوامر بنعطيها لعناصر الـ DOM عشان نضيف لها **سلوك معين (Behavior)**، أو نتحكم في **شكلها ومظهرها (Appearance)**، أو نتحكم في **وجودها وتكرارها في الصفحة (Structure)**.
+
+> 💡 **بمعنى أبسط:** الـ Directive بتخليك تقول للـ HTML: *"اتصرف بطريقة معينة أو اعمل وظيفة إضافية"*، من غير ما تحتاج تنشئ Component جديد كامل.
+
+---
+
+### 📌 أنواع الـ Directives في Angular (3 أنواع رئيسية):
+
+| النوع | الوظيفة الأساسية | هل يحتوي على Template؟ | أمثلة شائعة |
+| :--- | :--- | :---: | :--- |
+| **1. Component Directives** | بناء جزء كامل ومرئي من واجهة المستخدم (UI) | ✅ نعم | أي `@Component` |
+| **2. Attribute Directives** | تعديل مظهر أو سلوك عنصر موجود بالفعل في الـ DOM | ❌ لا | `ngClass`, `ngStyle`, Custom Directive |
+| **3. Structural Directives** | إضافة أو إزالة أو تكرار عناصر داخل شجرة الـ DOM | ❌ لا | `*ngIf`, `*ngFor` (أو `@if`, `@for`) |
+
+---
+
+### 1️⃣ Component Directives
+
+الـ **Component** هو في الحقيقة نوع خاص من الـ Directives، لكنه يتميز بأنه **يمتلك Template خاص به** (كود HTML + CSS) لعرض واجهة تفاعلية للمستخدم.
+
+<div dir="ltr" align="left">
 
 ```typescript
-import { Directive, ElementRef } from "@angular/core";
+@Component({
+  selector: 'app-employee',
+  template: `
+    <h2>Employee Details</h2>
+  `
+})
+export class EmployeeComponent {}
+```
 
-@Directive({ selector: "[myHighlight]" })
+</div>
+
+> 👈 الـ Component مسؤول عن جزء مستقل ومرئي بالكامل من الـ UI.
+
+---
+
+### 2️⃣ Attribute Directives
+
+الـ **Attribute Directive** تُستخدم لتغيير **شكل** (Styling) أو **سلوك** (Behavior) عنصر HTML موجود بالفعل، وتُضاف كـ Attribute على التاج نفسه.
+
+#### أ) أمثلة جاهزة من Angular (Built-in):
+* `ngClass`: لإضافة أو إزالة كلاسات CSS بناءً على شروط برمجية.
+* `ngStyle`: لتطبيق Inline Styles ديناميكية.
+
+<div dir="ltr" align="left">
+
+```html
+<div [ngClass]="{ active: isActive }">
+  Employee
+</div>
+```
+
+</div>
+
+#### ب) إنشاء Custom Attribute Directive:
+يمكنك عمل Directive مخصصة لك؛ مثل إنشاء Directive لتلوين خلفية أي عنصر باللون الأصفر:
+
+<div dir="ltr" align="left">
+
+```typescript
+import { Directive, ElementRef } from '@angular/core';
+
+@Directive({
+  selector: '[myHighlight]'
+})
 export class HighlightDirective {
-  constructor(el: ElementRef) {
-    el.nativeElement.style.backgroundColor = "yellow";
+  constructor(private el: ElementRef) {
+    this.el.nativeElement.style.backgroundColor = 'yellow';
   }
 }
 ```
 
 </div>
-الكود ده بيعمل Directive اسمه myHighlight، وكل اللي بيعمله إنه بيغير لون الخلفية لأي عنصر HTML للون الأصفر. يعني مثلاً لو عندك فقرة (paragraph) وعايز تديها خلفية صفراء، هتكتب كود بالشكل ده:
 
-<div dir="auto" align="left">
+**طريقة الاستخدام في الـ HTML:**
 
-```HTML
-<p myHighlight>Highlight me!</p>
+<div dir="ltr" align="left">
+
+```html
+<p myHighlight>
+  Highlight me!
+</p>
 ```
 
 </div>
 
+---
+
+### 3️⃣ Structural Directives
+
+الـ **Structural Directives** مسؤولة عن التعديل المباشر في **هيكل وبنية الـ DOM** (إضافة عناصر، إزالتها، أو تكرارها)، ودائمًا ما تبدأ في الصيغة التقليدية بعلامة النجمة (`*`).
+
+#### أ) الصيغة التقليدية (Classic Syntax):
+
+* **الـ `*ngIf`:** إضافة العنصر إلى الـ DOM أو حذفه بالكامل بناءً على شرط:
+
+<div dir="ltr" align="left">
+
+```html
+<div *ngIf="isLoggedIn">
+  Welcome back!
 </div>
-<hr/>
+```
+
+</div>
+
+* **الـ `*ngFor`:** تكرار العنصر في الـ DOM بعدد عناصر مصفوفة معينة:
+
+<div dir="ltr" align="left">
+
+```html
+<div *ngFor="let employee of employees">
+  {{ employee.name }}
+</div>
+```
+
+</div>
+
+#### ب) الصيغة الحديثة في Angular الحديث (Control Flow v17+):
+
+في إصدارات Angular الحديثة، تم تقديم **Built-in Control Flow** كبديل رسمي يتمتع بأداء أسرع وصيغة أسهل للقراءة:
+
+<div dir="ltr" align="left">
+
+```html
+@if (isLoggedIn) {
+  <div>Welcome back!</div>
+}
+
+@for (employee of employees; track employee.id) {
+  <div>{{ employee.name }}</div>
+}
+```
+
+</div>
+
+---
+
+### ⚖️ ما الفرق الجوهري بين الـ Component والـ Directive؟
+
+| وجه المقارنة | الـ Directive العادية | الـ Component |
+| :--- | :--- | :--- |
+| **الـ Template** | ❌ لا تمتلك Template | ✅ تمتلك Template وView خاصين بها |
+| **الهدف** | تزويد عنصر موجود بسلوك أو مظهر إضافي | بناء واجهة مستخدم جديدة متكاملة |
+| **طريقة التعريف** | `@Directive({ ... })` | `@Component({ ... })` |
+| **الاستخدام في HTML** | تُضاف كـ Attribute على العناصر | تُستخدم كـ Custom HTML Tag (Selector) |
+
+---
+
+### 🎯 الخلاصة
+
+* **Component:** بيبني جزء مرئي من الـ UI ومعه Template خاص به.
+* **Attribute Directive:** بتعدل على مظهر أو سلوك عنصر موجود (زي `ngClass` و`ngStyle`).
+* **Structural Directive:** بتتحكم في إضافة أو حذف أو تكرار العناصر في الـ DOM (زي `*ngIf` و`*ngFor` أو `@if` و`@for`).
+
+</div>
+
 
 ## What are components?
 
