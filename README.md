@@ -196,7 +196,7 @@ This Repo is inspired by the following sources:
 [⬆️ Back to Top](#top)
 
 <div dir="auto" align="right"> 
-Angular هو Framework معمول بـ TypeScript ومن تطوير Google، بنستخدمه عشان نبني بيه Web Applications، خصوصًا التطبيقات الكبيرة والـ SPA. بيوفرلنا حاجات كتير جاهزة زي الـ Components والـ Routing والـ Forms والـ HTTP Client والـ Dependency Injection، فبدل ما أبدأ كل حاجة من الصفر، Angular بيديني Structure وأدوات تساعدني أبني التطبيق بشكل منظم وسهل يتطور ويتصان.
+Angular‏ هو Framework‏ معمول بـ TypeScript‏ ومن تطوير Google‏، بنستخدمه عشان نبني بيه Web‏ Applications‏، خصوصًا التطبيقات الكبيرة والـ SPA.‏ بيوفرلنا حاجات كتير جاهزة زي الـ Components‏ والـ Routing‏ والـ Forms‏ والـ HTTP‏ Client‏ والـ Dependency‏ Injection‏، فبدل ما أبدأ كل حاجة من الصفر، Angular‏ بيديني Structure‏ وأدوات تساعدني أبني التطبيق بشكل منظم وسهل يتطور ويتصان.‏
 </div>
 <hr/>
 
