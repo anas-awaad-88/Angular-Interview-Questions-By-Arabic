@@ -196,7 +196,7 @@ This Repo is inspired by the following sources:
 [⬆️ Back to Top](#top)
 
 <div dir="auto" align="right"> 
-الـ Angular Framework هو منصة مفتوحة المصدر معتمدة على TypeScript، وبيستخدموها عشان يبنوا تطبيقات ويب، موبايل، وديسكتوب بكل سهولة. من أهم المميزات اللي بيوفرها الفريم وورك ده هي الـ declarative templates، ودي بتسهل الكتابة والتصميم. كمان فيه الـ dependency injection اللي بيخلي إعادة استخدام الكود والمرونة في الشغل أسهل. بالإضافة لكده، عندك أدوات شاملة من البداية للنهاية end to end tooling اللي بتسهل تطوير التطبيقات بشكل كبير.
+Angular هو Framework معمول بـ TypeScript ومن تطوير Google، بنستخدمه عشان نبني بيه Web Applications، خصوصًا التطبيقات الكبيرة والـ SPA. بيوفرلنا حاجات كتير جاهزة زي الـ Components والـ Routing والـ Forms والـ HTTP Client والـ Dependency Injection، فبدل ما أبدأ كل حاجة من الصفر، Angular بيديني Structure وأدوات تساعدني أبني التطبيق بشكل منظم وسهل يتطور ويتصان.
 </div>
 <hr/>
 
